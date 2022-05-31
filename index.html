@@ -1,43 +1,150 @@
-Componentes de la PNL
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Computo en la nube</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  body {
+    position: relative; 
+    margin: 10px;
+  }
+
+  nav{
+    float: right;
+}
+
+  nav ul li{
+    list-style: none;
+    margin-left: 50px;
+    float: left;
+    padding: 6px 0;
+    position: relative;
+}
+
+  nav ul li a{
+    text-decoration:solid;
+    /*color: #444;*/
+    font-weight: bold;
+}
+
+  nav ul li a::before{
+    display: block;
+    content: '';
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+  nav ul li a:hover::before{
+    width: 100%;
+}
+
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 50%;
+    height: 50%;
+  }
+
+  p{
+    line-height : 35px;
+    font-size: large;
+    text-align: justify;
+  }
+
+  h4 {
+    color: rgb(9, 134, 184);
+  }
+    
+  h5 {
+    color: rgb(5, 134, 184);
+  }
+
+  .referencia{
+    text-align: right;
+  }
+
+  /*
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black;
+    color: black;
+  }*/
+
+
+  /*h1{
+    color: rgb(138, 206, 206);
+  }*/
+
+
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<div id="section21" class="container-fluid bg-light" style="padding-top:70px;padding-bottom:70px;">
+  <h1>Componentes de PLN</h1><br>
+  <h5><i>Carlos Alejandro Baltazar Padilla </i></h5><br><br>
+  <p>
+    Componentes de la PNL
 La PNL describe y opera en tres elementos claves, presentes en todo comportamiento humano:
 •	Conducta externa: Lo que la persona hace y dice.
 •	Procesamiento interno: Los pensamientos de la persona.
 •	Estado interno: Los sentimientos de las personas.
 Este término es extraído de la cibernética y se utiliza como una analogía.  Todos tenemos el mismo hardware (cerebro y sistema nervioso) y lo que cambia es el software (programas mentales o patrones comportamentales). 
-Las formas de pensar, sentir y comportarnos siguen patrones sistemáticos. Nuestros grandes recursos, así como las más duras limitaciones, son resultado de los patrones mentales propios, es decir, de nuestro software.
-Así que dependiendo del software que uso, podré “filtrar” las experiencias vividas o el entorno.
-Los patrones comportamentales determinan mi forma de “ver” el mundo, esta generará mi forma de sentirlo, la cual invariablemente impactará en mi forma de estar en él, e indudablemente en mis conductas.
-Por último, estas conductas (lo que hago o dejo de hacer) generan en mí y en mi entorno resultados. Por ende, mis patrones, creencias, paradigmas, pensamientos o como queramos llamarlos, tienen una relación directa sobre mis resultados; entonces, al reprogramar mi software, estoy reestructurando mis resultados, tarea hacia la cual se enfoca la Programación Neurolingüística.
+Las formas de pensar, sentir y comportarnos siguen patrones sistemáticos. Nuestros grandes recursos, así como las más duras limitaciones, son resultado de los patrones mentales propios, es decir, de nuestro software.</p><br>
 
-Análisis morfológico y léxico
-La morfología proporciona información sobre la forma de cada palabra y su función en una frase. El léxico (o vocabulario) es el conjunto de palabras y modismos de una lengua. El análisis morfológico y léxico implica la consulta de listas especiales de lemas y sus derivaciones (listas que pueden completarse, si es necesario, con términos específicos relacionados con el dominio que se estudia), la resolución de las formas de inflexión (como la conjugación para los verbos y la declinación para los nombres) y la clasificación de las palabras en función de determinadas categorías (como sustantivo, pronombre, verbo, adjetivo).
+    <br><br>
+
+    <h4><i><strong>Análisis morfológico o léxico.</strong></i></h4>
+  <p>
+    La morfología proporciona información sobre la forma de cada palabra y su función en una frase. El léxico (o vocabulario) es el conjunto de palabras y modismos de una lengua. El análisis morfológico y léxico implica la consulta de listas especiales de lemas y sus derivaciones (listas que pueden completarse, si es necesario, con términos específicos relacionados con el dominio que se estudia), la resolución de las formas de inflexión (como la conjugación para los verbos y la declinación para los nombres) y la clasificación de las palabras en función de determinadas categorías (como sustantivo, pronombre, verbo, adjetivo).
 Los analizadores léxicos y morfológicos pueden implementarse por separado, pero a menudo forman una única tarea. El resultado de este proceso se conoce como Part of Speech Tagging (PoS) y el conjunto de etiquetas más utilizado es el Penn Treebank Project, que distingue 36 partes de la oración (48 si se incluyen los signos de puntuación).
 Ya en esta fase surgen las primeras dificultades relacionadas con la ambigüedad, en este caso léxica: para ciertas palabras la tarea no sabe atribuir correctamente la categoría morfológica adecuada.
 Algunos ejemplos:
 •	“Pesca”, que puede ser un sustantivo (el deporte, la actividad económica, el fruto de esa actividad) o un verbo (deporte, actividad económica).
 •	Esta ambigüedad puede resolverse con la introducción de los siguientes pasos, en los que también se incluye la comprensión del contexto.
+  </p>
 
-Análisis sintáctico
-La sintaxis permite explicar cómo algunas secuencias de palabras tienen sentido, mientras que otras contienen exactamente las mismas palabras, pero en un orden incorrecto, y por lo tanto no tienen sentido. El análisis sintáctico trata, por tanto, de identificar las distintas partes que dan sentido a la frase (sujeto, predicado, complemento) y de situar correctamente las palabras dentro de una frase. Generalmente, la estructura sintáctica se representa como un árbol de parseo.
-También en esta fase, la ambigüedad, esta vez de tipo sintáctico (también llamada ambigüedad local porque se refiere a una parte de la frase), entraña muchas dificultades. Por ejemplo:
-•	“Giorgio vio a Giulio con un telescopio”, ¿quién tenía el telescopio?
-A veces el contexto ayuda a resolver esas ambigüedades, pero en presencia de oraciones articuladas se genera una proliferación de árboles sintácticos con un evidente aumento de la complejidad.
+ <br><br>
 
+    <h4><i><strong>Análisis sintáctico.</strong></i></h4>
+  <p>
+    La sintaxis permite explicar cómo algunas secuencias de palabras tienen sentido, mientras que otras contienen exactamente las mismas palabras, pero en un orden incorrecto, y por lo tanto no tienen sentido. El análisis sintáctico trata, por tanto, de identificar las distintas partes que dan sentido a la frase (sujeto, predicado, complemento) y de situar correctamente las palabras dentro de una frase. Generalmente, la estructura sintáctica se representa como un árbol de parseo.
+    También en esta fase, la ambigüedad, esta vez de tipo sintáctico (también llamada ambigüedad local porque se refiere a una parte de la frase), entraña muchas dificultades. Por ejemplo:
+    •	“Giorgio vio a Giulio con un telescopio”, ¿quién tenía el telescopio?
+    A veces el contexto ayuda a resolver esas ambigüedades, pero en presencia de oraciones articuladas se genera una proliferación de árboles sintácticos con un evidente aumento de la complejidad.
+  </p><br><br>
+  
+   <h4><i><strong>Análisis semántico.</strong></i></h4>
+  <p>
+    El análisis semántico tiene como objetivo comprender el significado de toda una frase a partir del significado de cada término que la compone y de las relaciones existentes entre ellos. El significado de una frase, de hecho, no viene dado sólo por las palabras, sino también por el conocimiento de las reglas que las guían en función de la combinación, el orden en que aparecen, los vínculos con otros términos dentro o fuera de la frase. Estas operaciones permiten resolver algunos casos de ambigüedad global, es decir, referida a toda la frase, sin embargo presente también cuando el etiquetado PoS devuelve la categoría morfológica correcta de una palabra y el analizador sintáctico construye la estructura correcta de la frase.
+    Incluso en esta fase hay casos de ambigüedad, por ejemplo:
+    •	“Todo hombre ama a una mujer”
+    •	por cada unico hombre, hay una única mujer a la que ama
+    •	hay una sola mujer que cada hombre (tomado individualmente) ama
+  </p><br><br>
+  
+   <h4><i><strong>Discurso.</strong></i></h4>
+  <p>
+    En esta fase se considera un conjunto de oraciones o un discurso entero, de hecho una tarea fundamental pero particularmente compleja que pertenece a esta fase se llama coreferencia, tiene la tarea de identificar en el texto todas las expresiones que se refieren a una entidad dada entre las identificadas por Entidad Nombrada o entre las referencias anafóricas relacionadas con ellas. En una primera fase identifica las partes nominales del texto mediante Entidades Nombradas, número, género y rol sintáctico, luego realiza una comprobación de consistencia hacia atrás y determina todos los posibles enlaces con ellas, hasta una distancia predefinida. Hay otra tarea que resuelve las elipsis, es decir, las oraciones que carecen de ciertos elementos sintácticos que deben deducirse del contexto.
+    Otra posible tarea que se lleva a cabo en esta fase es la pragmática, es decir, una disciplina que tiende a distinguir entre el significado del enunciado y la intención del hablante; el significado del enunciado es su sentido literal, mientras que la intención del hablante es el concepto que éste intenta transmitir.
+    El análisis del discurso es un paso importante para muchas actividades de PNL, que incluyen la comprensión del lenguaje natural, como el resumen de documentos, la respuesta a preguntas y la extracción de información de un texto.
+    
+  </p><br><br>
+  
+  <h4><i><strong>Análisis pragmático.</strong></i></h4>
+  <p>
+    Incorpora el análisis del contexto de uso a la interpretación final. Aquí se incluye el tratamiento del lenguaje figurado (metáfora e ironía) como el conocimiento del mundo específico necesario para entender un texto especializado.
 
-
-
-Análisis semántico
-El análisis semántico tiene como objetivo comprender el significado de toda una frase a partir del significado de cada término que la compone y de las relaciones existentes entre ellos. El significado de una frase, de hecho, no viene dado sólo por las palabras, sino también por el conocimiento de las reglas que las guían en función de la combinación, el orden en que aparecen, los vínculos con otros términos dentro o fuera de la frase. Estas operaciones permiten resolver algunos casos de ambigüedad global, es decir, referida a toda la frase, sin embargo presente también cuando el etiquetado PoS devuelve la categoría morfológica correcta de una palabra y el analizador sintáctico construye la estructura correcta de la frase.
-Incluso en esta fase hay casos de ambigüedad, por ejemplo:
-•	“Todo hombre ama a una mujer”
-•	por cada unico hombre, hay una única mujer a la que ama
-•	hay una sola mujer que cada hombre (tomado individualmente) ama
-
-Integración del discurso
-En esta fase se considera un conjunto de oraciones o un discurso entero, de hecho una tarea fundamental pero particularmente compleja que pertenece a esta fase se llama coreferencia, tiene la tarea de identificar en el texto todas las expresiones que se refieren a una entidad dada entre las identificadas por Entidad Nombrada o entre las referencias anafóricas relacionadas con ellas. En una primera fase identifica las partes nominales del texto mediante Entidades Nombradas, número, género y rol sintáctico, luego realiza una comprobación de consistencia hacia atrás y determina todos los posibles enlaces con ellas, hasta una distancia predefinida. Hay otra tarea que resuelve las elipsis, es decir, las oraciones que carecen de ciertos elementos sintácticos que deben deducirse del contexto.
-Otra posible tarea que se lleva a cabo en esta fase es la pragmática, es decir, una disciplina que tiende a distinguir entre el significado del enunciado y la intención del hablante; el significado del enunciado es su sentido literal, mientras que la intención del hablante es el concepto que éste intenta transmitir.
-El análisis del discurso es un paso importante para muchas actividades de PNL, que incluyen la comprensión del lenguaje natural, como el resumen de documentos, la respuesta a preguntas y la extracción de información de un texto.
-
-
-Análisis pragmático
-Incorpora el análisis del contexto de uso a la interpretación final. Aquí se incluye el tratamiento del lenguaje figurado (metáfora e ironía) como el conocimiento del mundo específico necesario para entender un texto especializado.
+  
+  </p><br><br>
+   
+</body>
+</html>
